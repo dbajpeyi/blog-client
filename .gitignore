@@ -1,0 +1,5 @@
+.*.swp
+.monitor
+node_modules/
+*.log
+dist/

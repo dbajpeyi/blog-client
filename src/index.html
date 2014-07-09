@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo 1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Cabin|Lobster' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/<%= grunt.config.get('pkg.name') %>.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="vspace-five box">
+	<div class="align-center" style="color : #c0392b;">
+        <h1 >Work in progress!</h1>
+	<i class="fa fa-exclamation-triangle fa-5x"></i>
+	</div>
+      </div>
+      <div ng-view></div>
+      <footer class="vspace-five">
+        <span class="copyright">&copy;</span>
+	2014 Built by Deepankar Bajpeyi	with <i class="fa fa-heart-o"></i> at WWStay
+      </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-resource.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.js"></script>
+    <script src="/static/<%= grunt.config.get('pkg.name') %>.js"></script>
+  </body>
+</html>
