@@ -62,13 +62,13 @@ footer, .footer {
     position : absolute;
     top      : 10px;
     right    : 10px;
-    text-align :right;
-    float   : right;
+    display  : block ;
+    margin   : 0;
 }
 
 #wwstay-logo1 {
     position : absolute;
-    width : 80px;
+    width : 65px;
     top   : 10px;
     left  : 2px;
     height : 42px;
@@ -78,7 +78,8 @@ footer, .footer {
     font-weight : 500;
     font-family : @font-header;
     text-align : center;
-    display     : block;
+    margin : 0;
+    padding:0;
 }
 
 
@@ -92,31 +93,32 @@ footer, .footer {
    background-color : #5C0C27;
 }
 #wwstay-logo2 {
-    position : relative;
+    position : absolute;
+    left     : 68px;
     top   : 10px;
-    width : 60px;
     height : 42px;
     background-color : #fff; 
     color   : #707070;
     font-size : 30px;
     font-weight : 500;
     font-family : @font-header;
-    text-align : center;
+    text-align : left;
     display     : block;
+    margin-right      : 10px;
 }
 
 
 nav {
     width : 100%; 
     text-align : center;
+    float : right;
 }
 nav ul {
-    margin-top  : 5px;
     line-height : 50px;
 }
 
 nav li {
-    display : inline ; 
+    display : inline; 
     list-style-type : none;
 }
 
