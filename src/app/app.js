@@ -1,6 +1,7 @@
 angular.module('app', [
   'ngResource',
   'ngRoute',
+  "textAngular",
   'templates.app',
   'resources.all',
   'directives.all',
