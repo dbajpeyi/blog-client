@@ -5,13 +5,13 @@ angular.module('app')
     "GetPosts",
     function($scope, $location,  GetPosts) { 
 
-	var state = GetPosts.get({}, function(){
-			$scope.status = state.status;
-            console.log(state);
+	var posts = GetPosts.get({}, function(){
+			$scope.status = posts.status;
+            $scope.posts  = posts.posts;
+            console.log(posts);
 		})
 
         $scope.createPost = function () {
-            console.log("Hello");
             $location.path("/create-post")
         }
 
