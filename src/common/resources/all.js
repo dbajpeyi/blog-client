@@ -13,3 +13,8 @@ demoservices
       query: {method:'GET'}
     });
   }])
+  .factory("SavePost", ["$resource", function($resource) {
+    return $resource(URL_BASE+"/api/post/save", {}, {
+      save: {method:'POST'}
+    });
+  }])

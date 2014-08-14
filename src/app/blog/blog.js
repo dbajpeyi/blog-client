@@ -17,7 +17,20 @@ angular.module('app')
 
 }]).controller("CreatePostCtrl", [
     "$scope",
-    function($scope) { 
+    "SavePost",
+    function($scope, SavePost) { 
+
+    $scope.savePost = function(){
+        var post = SavePost.save({
+
+                title : $scope.title,
+                content: $scope.content
+
+            }, function(){
+                console.log(post);
+                
+            })
+    }
 
 	}	
 ]);

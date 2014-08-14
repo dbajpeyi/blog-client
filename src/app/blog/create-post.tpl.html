@@ -1,14 +1,13 @@
-<div class="vspace-four"></div>
-
+<div class="row">
+    <div class="vspace-four"></div>
+</div>
 <div class="row">
     <input class="form-control" placeholder="Enter a title for your post" ng-model="title"></input>
 </div>
-<br>
 <div class="row">
     <div text-angular ng-model="content"></div>
 </div>
-<br>
 <div class="row">
-    <button class="btn btn-danger center-block">Done</button>
+    <button class="btn btn-danger center-block" ng-click="savePost()">Done</button>
 </div>
 
