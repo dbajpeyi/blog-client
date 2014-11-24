@@ -21,7 +21,7 @@ angular.module('app')
     "$location",
     function($scope, SavePost, $location) { 
 
-    $scope.doneText = "Done!";	
+    $scope.doneText = "Done";	
 
     $scope.savePost = function(){
 	$scope.doneText = "Saving...";
