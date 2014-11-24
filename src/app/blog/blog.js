@@ -18,16 +18,20 @@ angular.module('app')
 }]).controller("CreatePostCtrl", [
     "$scope",
     "SavePost",
-    function($scope, SavePost) { 
+    "$location",
+    function($scope, SavePost, $location) { 
+
+    $scope.doneText = "Done!";	
 
     $scope.savePost = function(){
+	$scope.doneText = "Saving...";
         var post = SavePost.save({
 
                 title : $scope.title,
                 content: $scope.content
 
             }, function(){
-                console.log(post);
+		$location.path("/");
                 
             })
     }
